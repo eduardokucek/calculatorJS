@@ -12,8 +12,11 @@
   --display-background: #21252b;
   --keys-background: #4d4d4d;
   --key-operator-backgound: #fe9f06;
+  --key-operator-backgound-hover: #fdab26;
   --key-number-background: #a0a0a0;
+  --key-number-background-hover: #a8a8a8;
   --key-menu-background: #eeeeee;
+  --key-menu-background-hover: #f8f6f6;
   --font-numbers: #eeeeee;
   --font-operators: #eeeeee;
   --font-menu: #21252b;

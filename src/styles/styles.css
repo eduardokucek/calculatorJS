@@ -11,21 +11,40 @@
   display: flex;
   flex-direction: column;
   border-radius: var(--border-radius-default);
-  height: 448px;
+  height: 468px;
   width: 300px;
 }
 
 .calculator__display {
   display: flex;
+  flex-direction: column;
   justify-content: right;
   align-items: center;
   height: 100px;
   width: 100%;
   border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
   background-color: var(--display-background);
+  /* color: var(--font-numbers); */
+  /* font-size: 32px; */
+  padding: 0.4rem;
+}
+
+.previous-operand {
+  display: flex;
+  justify-content: right;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.current-operand {
+  display: flex;
+  justify-content: right;
+  height: 100%;
+  width: 100%;
   color: var(--font-numbers);
   font-size: 32px;
-  padding: 0.4rem;
 }
 
 .calculator__keys {
@@ -64,13 +83,21 @@
   margin: 0.2rem;
 }
 
+.key--menu:hover {
+  background-color: var(--key-menu-background-hover);
+}
+
 .key--operator {
   height: 64px;
   width: 64px;
   border-radius: 50px;
   background-color: var(--key-operator-backgound);
   color: var(--font-operators);
-  margin: 0.2rem;
+  margin: 0.28rem;
+}
+
+.key--operator:hover {
+  background-color: var(--key-operator-backgound-hover);
 }
 
 .key--number {
@@ -80,6 +107,10 @@
   background-color: var(--key-number-background);
   color: var(--font-numbers);
   margin: 0.2rem;
+}
+
+.key--number:hover {
+  background-color: var(--key-number-background-hover);
 }
 
 #key--number-zero {

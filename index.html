@@ -3,43 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
     <link rel="stylesheet" href="/src/styles/reset.css" />
     <link rel="stylesheet" href="/src/styles/globalStyle.css" />
     <link rel="stylesheet" href="/src/styles/styles.css" />
     <script type="module" src="/src/scripts/index.js"></script>
-    <title>Document</title>
   </head>
   <body>
     <div class="container">
       <div class="calculator">
-        <div class="calculator__display"></div>
+        <div class="calculator__display">
+          <div class="previous-operand" data-previous-operand></div>
+          <div class="current-operand" data-current-operand></div>
+        </div>
         <div class="calculator__keys">
           <div class="calculator__keys--numbers">
             <div class="calculator__keys--menu">
-              <button class="key--menu" data-action="clear">AC</button>
-              <button class="key--menu" data-action="plusminus">+/-</button>
-              <button class="key--menu" data-action="porcentage">%</button>
+              <button class="key--menu" data-all-clear>AC</button>
+              <button class="key--menu" data-operation>%</button>
+              <button class="key--menu" data-delete>DEL</button>
             </div>
-            <button class="key--number">7</button>
-            <button class="key--number">8</button>
-            <button class="key--number">9</button>
-            <button class="key--number">4</button>
-            <button class="key--number">5</button>
-            <button class="key--number">6</button>
-            <button class="key--number">1</button>
-            <button class="key--number">2</button>
-            <button class="key--number">3</button>
-            <button id="key--number-zero">0</button>
-            <button class="key--number" data-action="decimal">.</button>
+            <button class="key--number" data-number>7</button>
+            <button class="key--number" data-number>8</button>
+            <button class="key--number" data-number>9</button>
+            <button class="key--number" data-number>4</button>
+            <button class="key--number" data-number>5</button>
+            <button class="key--number" data-number>6</button>
+            <button class="key--number" data-number>1</button>
+            <button class="key--number" data-number>2</button>
+            <button class="key--number" data-number>3</button>
+            <button id="key--number-zero" data-number>0</button>
+            <button class="key--number" data-number>.</button>
           </div>
           <div class="calculator__keys--operators">
-            <button class="key--operator" data-action="divide">÷</button>
-            <button class="key--operator" data-action="multiply">
-              &times;
-            </button>
-            <button class="key--operator" data-action="subtract">-</button>
-            <button class="key--operator" data-action="add">+</button>
-            <button class="key--operator" data-action="calculate">=</button>
+            <button class="key--operator" data-operation>÷</button>
+            <button class="key--operator" data-operation>*</button>
+            <button class="key--operator" data-operation>-</button>
+            <button class="key--operator" data-operation>+</button>
+            <button class="key--operator" data-equals>=</button>
           </div>
         </div>
       </div>
